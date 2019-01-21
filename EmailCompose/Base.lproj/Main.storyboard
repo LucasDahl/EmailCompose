@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmailCompose" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35S-4J-y1L">
+                                <rect key="frame" x="35" y="762" width="344" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wZR-m3-zZk"/>
+                                </constraints>
+                                <state key="normal" title="Email Support"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-airplane" translatesAutoresizingMaskIntoConstraints="NO" id="FbO-nJ-FjV">
+                                <rect key="frame" x="67" y="308" width="280" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="Hhg-dD-M6G"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="280" id="XqI-i1-8QR"/>
+                                    <constraint firstAttribute="width" constant="280" id="q4t-ac-ldM"/>
+                                    <constraint firstAttribute="height" constant="280" id="rTd-lN-8QI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FbO-nJ-FjV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="A0s-MC-FR4"/>
+                            <constraint firstItem="FbO-nJ-FjV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="264" id="ACC-3W-MOm"/>
+                            <constraint firstItem="FbO-nJ-FjV" firstAttribute="centerX" secondItem="35S-4J-y1L" secondAttribute="centerX" id="dur-x8-yqZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FbO-nJ-FjV" secondAttribute="trailing" constant="67" id="jay-wr-HNG"/>
+                            <constraint firstItem="35S-4J-y1L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="spB-2i-Zuc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="35S-4J-y1L" secondAttribute="bottom" constant="50" id="xTo-nd-XWW"/>
+                            <constraint firstItem="FbO-nJ-FjV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yaf-u0-RCc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="email-airplane" width="600" height="600"/>
+    </resources>
+</document>
