@@ -22,6 +22,22 @@ class ViewController: UIViewController {
     
     func showMailMessage() {
         
+        // Check if the device can send mail
+        guard MFMailComposeViewController.canSendMail() else {
+            // Add an alert to let the user know they can't send mail.
+            return
+        }
+        
+        // Setup the composer
+        let composer = MFMailComposeViewController()
+        composer.mailComposeDelegate = self
+        composer.setToRecipients(["YourEmail@mail.com"])
+        composer.setSubject("Hello World!")
+        composer.setMessageBody("I LOVE SWIFT", isHTML: false)
+        
+        // Present the composer viewController
+        present(composer, animated: true)
+        
         
     }
     
@@ -35,5 +51,8 @@ class ViewController: UIViewController {
         showMailMessage()
         
     }
-}
+} // End Class
 
+extension ViewController: MFMailComposeViewControllerDelegate {
+    
+}
