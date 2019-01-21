@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,24 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    //================
+    // MARL: - Methods
+    //================
+    
+    func showMailMessage() {
+        
+        
+    }
+    
+    //================
+    // AMRK: - Actions
+    //================
 
+    @IBAction func emailButtonTapped(_ sender: SAButton) {
+        
+        // Needs to be ran on an actual device
+        showMailMessage()
+        
+    }
 }
 
